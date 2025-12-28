@@ -10,3 +10,7 @@ def GetLineWithStringIn(Path: str,String: str):
         if String in line:
             return line
         
+def AddContentToFile(Path: str,Content: str):
+    f = open(Path, "+a")
+    f.write("\n" + Content)
+    f.close()
